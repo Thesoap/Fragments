@@ -38,7 +38,8 @@ public class ListFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_liste, container, false);
         SharedPreferences SP = this.getActivity().getSharedPreferences("pref", Context.MODE_PRIVATE);
         ArraySet<String> set = new ArraySet <String>();
-        holder[]
+        String[] holder = new String[20];
+        holder[0] = "Hek";
         ListView list = (ListView) view.findViewById(R.id.listView);
         ArrayAdapter<String> arrayStringAdapter = new ArrayAdapter<String>(getActivity(),android.R.layout.simple_list_item_1,holder);
         list.setAdapter(arrayStringAdapter);
